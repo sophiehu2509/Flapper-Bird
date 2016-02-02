@@ -1,0 +1,13 @@
+package FlapperBird;
+import javax.swing.JPanel;
+import java.awt.Graphics;
+
+public class Renderer extends JPanel{
+		private static final long serialVersionVID=1L;
+		
+		protected void paintComponent (Graphics g)
+		{
+			super.paintComponent(g);
+			FlapperBird.flapperBird.repaint(g);
+		}
+}
